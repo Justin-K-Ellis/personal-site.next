@@ -6,6 +6,11 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiVite,
+  SiNodedotjs,
+  SiExpress,
+  SiPostgresql,
+  SiDrizzle,
+  SiPrisma,
 } from "react-icons/si";
 import { PiDatabase } from "react-icons/pi";
 import { Tech } from "@/types";
@@ -53,5 +58,33 @@ export const frontend: Tech[] = [
     name: "Vite",
     icon: SiVite,
     color: "text-violet-500",
+  },
+];
+
+export const backend: Tech[] = [
+  {
+    name: "Node.js",
+    icon: SiNodedotjs,
+    color: "text-lime-400",
+  },
+  {
+    name: "express.js",
+    icon: SiExpress,
+    color: "text-black",
+  },
+  {
+    name: "PostgreSQL",
+    icon: SiPostgresql,
+    color: "text-blue-800",
+  },
+  {
+    name: "Drizzle",
+    icon: SiDrizzle,
+    color: "text-lime-500",
+  },
+  {
+    name: "Prisma",
+    icon: SiPrisma,
+    color: "text-black",
   },
 ];
