@@ -17,19 +17,22 @@ export default function Home() {
       <section id="tech-stack" className="flex flex-col gap-4 md:gap-8">
         <Title text={t("techStack")} />
         <p className="text-center">{t("whatIcanDo")}</p>
-        <SubTitle text="Programming Languages" />
-        <div className="flex md:flex-row flex-col gap-2 flex-wrap justify-center">
-          {languages.map((language) => {
-            return (
-              <TechCard
-                key={language.name}
-                name={language.name}
-                Icon={language.icon}
-                color={language.color}
-              />
-            );
-          })}
-        </div>
+        <article id="programming-languages">
+          <SubTitle text="Programming Languages" />
+          <div className="flex md:flex-row flex-col gap-2 flex-wrap justify-center">
+            {languages.map((language) => {
+              return (
+                <TechCard
+                  key={language.name}
+                  name={language.name}
+                  Icon={language.icon}
+                  color={language.color}
+                />
+              );
+            })}
+          </div>
+        </article>
+        <article id="front-end"></article>
       </section>
     </div>
   );

@@ -1,4 +1,12 @@
-import { SiJavascript, SiTypescript, SiPython } from "react-icons/si";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiPython,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiVite,
+} from "react-icons/si";
 import { PiDatabase } from "react-icons/pi";
 import { Tech } from "@/types";
 
@@ -22,5 +30,28 @@ export const languages: Tech[] = [
     name: "SQL",
     icon: PiDatabase,
     color: "text-slate-600",
+  },
+];
+
+export const frontend: Tech[] = [
+  {
+    name: "React.js",
+    icon: SiReact,
+    color: "text-blue-400",
+  },
+  {
+    name: "Next.js",
+    icon: SiNextdotjs,
+    color: "text-black",
+  },
+  {
+    name: "Tailwind",
+    icon: SiTailwindcss,
+    color: "text-cyan-400",
+  },
+  {
+    name: "Vite",
+    icon: SiVite,
+    color: "text-violet-500",
   },
 ];
