@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import Hero from "@/components/Hero";
 import Title from "@/components/Title";
-import { languages } from "@/assests/techStackData";
+import { languages, frontend, backend } from "@/assests/techStackData";
 import TechContainer from "@/components/TechContainer";
 
 export default function Home() {
@@ -22,6 +22,17 @@ export default function Home() {
           tech={languages}
         />
         <hr />
+        <TechContainer
+          htmlId="fontend-tech"
+          subtitle="Frontend Technologies"
+          tech={frontend}
+        />
+        <hr />
+        <TechContainer
+          htmlId="backend-tech"
+          subtitle="Backend Technologies"
+          tech={backend}
+        />
       </section>
     </div>
   );
