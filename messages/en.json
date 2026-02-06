@@ -8,6 +8,10 @@
     "justin": "Justin Klitgaard",
     "projects": "Projects",
     "techStack": "Tech Stack",
-    "whatIcanDo": "I'm capable in these languages and technologies:"
+    "whatIcanDo": "I'm capable in these languages and technologies:",
+    "languageSubtitle": "Programming Languages",
+    "frontendSubtitle": "Frontend Technologies",
+    "backendSubtitle": "Backend Technologies",
+    "toolingSubtitle": "Tools, etc."
   }
 }
