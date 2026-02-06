@@ -1,11 +1,15 @@
 import { useTranslations } from "next-intl";
 import Hero from "@/components/Hero";
 import Title from "@/components/Title";
-import { languages, frontend, backend } from "@/assests/techStackData";
 import TechContainer from "@/components/TechContainer";
+import { languages, frontend, backend, tools } from "@/assests/techStackData";
 
 export default function Home() {
   const t = useTranslations("HomePage");
+  const languageSubtitleMsg = t("languageSubtitle");
+  const frontendSubtitleMsg = t("frontendSubtitle");
+  const backendSubtitleMsg = t("backendSubtitle");
+  const toolsSubtitleMsg = t("toolingSubtitle");
 
   return (
     <div id="container" className="flex flex-col gap-4">
@@ -18,20 +22,26 @@ export default function Home() {
         <p className="text-center">{t("whatIcanDo")}</p>
         <TechContainer
           htmlId="programming-languages"
-          subtitle="Programming Languages"
+          subtitle={languageSubtitleMsg}
           tech={languages}
         />
         <hr />
         <TechContainer
           htmlId="fontend-tech"
-          subtitle="Frontend Technologies"
+          subtitle={frontendSubtitleMsg}
           tech={frontend}
         />
         <hr />
         <TechContainer
           htmlId="backend-tech"
-          subtitle="Backend Technologies"
+          subtitle={backendSubtitleMsg}
           tech={backend}
+        />
+        <hr />
+        <TechContainer
+          htmlId="tool-tech"
+          subtitle={toolsSubtitleMsg}
+          tech={tools}
         />
       </section>
     </div>

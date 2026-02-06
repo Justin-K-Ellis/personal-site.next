@@ -1,16 +1,20 @@
 import {
+  SiDrizzle,
+  SiExpress,
+  SiGit,
+  SiGithub,
   SiJavascript,
-  SiTypescript,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiNotion,
+  SiPostgresql,
+  SiPrisma,
   SiPython,
   SiReact,
-  SiNextdotjs,
+  SiReactrouter,
   SiTailwindcss,
+  SiTypescript,
   SiVite,
-  SiNodedotjs,
-  SiExpress,
-  SiPostgresql,
-  SiDrizzle,
-  SiPrisma,
 } from "react-icons/si";
 import { PiDatabase } from "react-icons/pi";
 import { Tech } from "@/types";
@@ -45,19 +49,19 @@ export const frontend: Tech[] = [
     color: "text-blue-400",
   },
   {
+    name: "React Router",
+    icon: SiReactrouter,
+    color: "text-rose-600",
+  },
+  {
     name: "Next.js",
     icon: SiNextdotjs,
     color: "text-black",
   },
   {
-    name: "Tailwind",
+    name: "Tailwind CSS",
     icon: SiTailwindcss,
     color: "text-cyan-400",
-  },
-  {
-    name: "Vite",
-    icon: SiVite,
-    color: "text-violet-500",
   },
 ];
 
@@ -73,6 +77,11 @@ export const backend: Tech[] = [
     color: "text-black",
   },
   {
+    name: "Next.js",
+    icon: SiNextdotjs,
+    color: "text-black",
+  },
+  {
     name: "PostgreSQL",
     icon: SiPostgresql,
     color: "text-blue-800",
@@ -85,6 +94,29 @@ export const backend: Tech[] = [
   {
     name: "Prisma",
     icon: SiPrisma,
+    color: "text-black",
+  },
+];
+
+export const tools: Tech[] = [
+  {
+    name: "git",
+    icon: SiGit,
+    color: "text-orange-500",
+  },
+  {
+    name: "GitHub",
+    icon: SiGithub,
+    color: "text-black",
+  },
+  {
+    name: "Vite",
+    icon: SiVite,
+    color: "text-violet-500",
+  },
+  {
+    name: "Notion",
+    icon: SiNotion,
     color: "text-black",
   },
 ];
