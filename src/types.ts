@@ -5,12 +5,6 @@ export interface Tech {
   icon: IconType;
   color: string;
 }
-
-export interface NavLink {
-  url: string;
-  text: string;
-}
-
 export type TechBadge =
   | "daisyUI"
   | "Express"
@@ -27,3 +21,23 @@ export type TechBadge =
   | "Tailwind"
   | "TypeScript"
   | "Vue";
+
+export interface NavLink {
+  url: string;
+  text: string;
+}
+
+export interface ProjectCard {
+  name: string;
+  role: ProjectRole[];
+  description: string;
+  repoLink: string;
+  deploymentLink: string;
+  stack: TechBadge[];
+}
+
+export type ProjectRole =
+  | "Frontend Enginner"
+  | "Backend Engineer"
+  | "Fullstack Engineer"
+  | "Project Lead";
