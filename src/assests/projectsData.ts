@@ -18,4 +18,20 @@ export const projects: ProjectCard[] = [
       "Tailwind",
     ],
   },
+  {
+    name: "Recipe Wrangler",
+    role: ["Fullstack Engineer"],
+    description:
+      "Allows users to search for recipes, creates check lists for ingredients and cooking directions. Logged in users can also save recipes and create their own.",
+    repoLink: "https://github.com/Justin-K-Ellis/recipe_wrangler_client",
+    deploymentLink: "https://recipe-wrangler-client.vercel.app/home",
+    stack: [
+      "TypeScript",
+      "Next",
+      "Express",
+      "PostgreSQL",
+      "Firebase auth",
+      "Spoontacular API",
+    ],
+  },
 ];
