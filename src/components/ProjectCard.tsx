@@ -10,20 +10,21 @@ import { Button } from "./ui/button";
 import { Link } from "@/i18n/navigation";
 
 import type { ProjectCard } from "@/types";
+import arrayToString from "@/lib/arrayToString";
 
 interface ProjectCardProps {
   projectData: ProjectCard;
 }
 
 export default function ProjectCard({ projectData }: ProjectCardProps) {
+  const roles = arrayToString(projectData.role);
+
   return (
     <Card>
       <CardHeader>
         <CardTitle>{projectData.name}</CardTitle>
         <CardDescription className="flex flex-row gap-1">
-          {projectData.role.map((r) => (
-            <p key={r}>{r}</p>
-          ))}
+          <p>{roles}</p>
         </CardDescription>
       </CardHeader>
       <CardContent>
