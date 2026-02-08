@@ -32,7 +32,7 @@ export interface ProjectCard {
   role: ProjectRole[];
   description: string;
   repoLink: string;
-  deploymentLink: string;
+  deploymentLink?: string;
   stack: TechBadge[];
 }
 

@@ -1,8 +1,12 @@
 import { useTranslations } from "next-intl";
+
 import Hero from "@/components/Hero";
 import Title from "@/components/Title";
 import TechContainer from "@/components/TechContainer";
+import ProjectCard from "@/components/ProjectCard";
+
 import { languages, frontend, backend, tools } from "@/assests/techStackData";
+import { projects } from "@/assests/projectsData";
 
 export default function Home() {
   const t = useTranslations("HomePage");
@@ -16,6 +20,11 @@ export default function Home() {
       <Hero />
       <hr />
       <Title text={t("projects")} />
+      <div>
+        {projects.map((project) => (
+          <ProjectCard key={project.name} projectData={project} />
+        ))}
+      </div>
       <hr />
       <section id="tech-stack" className="flex flex-col gap-4 md:gap-8">
         <Title text={t("techStack")} />
