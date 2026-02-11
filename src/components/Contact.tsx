@@ -4,7 +4,7 @@ import SubTitle from "./SubTitle";
 
 export default function Contact() {
   return (
-    <section id="contact">
+    <section id="contact" className="mb-8 md:mb-12">
       <Title text="Contact" />
       <h3 className="font-bold text-center text-xl md:text-3xl mt-1 mb-4">
         Get in touch with me{" "}
