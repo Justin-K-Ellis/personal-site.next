@@ -34,4 +34,56 @@ export const projects: ProjectCard[] = [
       "Spoontacular API",
     ],
   },
+  {
+    name: "Washoku Walker",
+    role: ["Fullstack Engineer"],
+    description:
+      "Helps users find great restaurants in Japan. Users who want to find a specific food can get a selection of restaurants by dish and area, or get a list of highly-rated restaurants near them.",
+    repoLink: "https://github.com/Justin-K-Ellis/Washoku-Walker",
+    deploymentLink: "https://washoku-walker.onrender.com/",
+    stack: [
+      "TypeScript",
+      "JavaScript",
+      "Vue",
+      "Express",
+      "PostgreSQL",
+      "Google Places API",
+      "Tailwind",
+      "daisyUI",
+    ],
+  },
+  {
+    name: "Personal Site (this site)",
+    role: ["Fullstack Engineer"],
+    description:
+      "My personal site for sharing my projects, tech stack and info about me.",
+    repoLink: "#",
+    deploymentLink: "#",
+    stack: ["TypeScript", "Next", "next-intl", "Tailwind", "shadcn/ui"],
+  },
+  {
+    name: "Course Managment",
+    role: ["Fullstack Engineer"],
+    description:
+      "A fullstack learning management system that allows users to create, read, update, and delete information about courses, instructors, and students.",
+    repoLink: "https://github.com/Justin-K-Ellis/course-management",
+    deploymentLink: "",
+    stack: [
+      "JavaScript",
+      "React",
+      "React Router",
+      "Express",
+      "PostgreSQL",
+      "Tailwind",
+    ],
+  },
+  {
+    name: "Nagano Quest",
+    role: ["Frontend Enginner"],
+    description:
+      "A fun little choose your own adventure game that takes users through Nagano Prefecture, Japan.",
+    repoLink: "https://github.com/Justin-K-Ellis/NaganoQuest.js",
+    deploymentLink: "https://nagano-quest-js.vercel.app/",
+    stack: ["JavaScript", "React", "React Router", "Tailwind"],
+  },
 ];

@@ -21,7 +21,7 @@ export default function ProjectCard({ projectData }: ProjectCardProps) {
   const roles = arrayToString(projectData.role);
 
   return (
-    <Card className="bg-stone-50">
+    <Card className="bg-stone-50 md:w-1/3 grow">
       <CardHeader>
         <CardTitle className="text-xl">{projectData.name}</CardTitle>
         <CardDescription className="flex flex-row gap-1">
@@ -38,11 +38,11 @@ export default function ProjectCard({ projectData }: ProjectCardProps) {
           ))}
         </div>
         <div className="flex gap-2">
-          <Button>
+          <Button variant="outline">
             <Link href={projectData.repoLink}>Repo</Link>
           </Button>
           {projectData.deploymentLink && (
-            <Button>
+            <Button variant="outline">
               <Link href={projectData.deploymentLink}>Live Deployment</Link>
             </Button>
           )}

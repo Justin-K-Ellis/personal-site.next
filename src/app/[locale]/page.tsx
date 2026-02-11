@@ -20,7 +20,7 @@ export default function Home() {
       <Hero />
       <hr />
       <Title text={t("projects")} />
-      <div>
+      <div className="flex flex-row gap-4 flex-wrap">
         {projects.map((project) => (
           <ProjectCard key={project.name} projectData={project} />
         ))}
