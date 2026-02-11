@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Title from "@/components/Title";
 import TechContainer from "@/components/TechContainer";
 import ProjectCard from "@/components/ProjectCard";
+import Contact from "@/components/Contact";
 
 import { languages, frontend, backend, tools } from "@/assests/techStackData";
 import { projects } from "@/assests/projectsData";
@@ -52,6 +53,8 @@ export default function Home() {
           subtitle={toolsSubtitleMsg}
           tech={tools}
         />
+        <hr />
+        <Contact />
       </section>
     </div>
   );
