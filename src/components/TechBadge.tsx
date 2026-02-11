@@ -6,5 +6,5 @@ interface TechBadgeProps {
 }
 
 export default function TechBadge({ techBadgeData }: TechBadgeProps) {
-  return <Badge className="font-mono">{techBadgeData}</Badge>;
+  return <Badge className="font-mono bg-blue-700">{techBadgeData}</Badge>;
 }
