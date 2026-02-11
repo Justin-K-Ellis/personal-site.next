@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Title from "./Title";
-import SubTitle from "./SubTitle";
 
 export default function Contact() {
   return (
